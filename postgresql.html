@@ -1,0 +1,90 @@
+<HTML>
+<HEAD><TITLE>The PostgreSQL database</TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<H1>The PostgreSQL database</H1>
+
+<P>Many of the examples in this book require a database with a JDBC
+driver.  There are many such databases available, but we have decided
+to use PostgreSQL, a high-quality open source database, available for
+Linux, Solaris and other Unixes.  RPMs for Redhat 5.2 and 6.x are
+include on this CD in the postgresql/linux directory.  Full source is
+also included, in the postgresql/source directory.  New versions and
+documentation may be freely downloaded from <A
+HREF="http://www.postgresql.org">http://www.postgresql.org</A>.
+Before using PostgreSQL, please read the <a href="PREADME.txt">license</a>.
+</P>
+
+<P>A version of PostgreSQL for Windows NT has recently been released
+and is included in the postgresql/win32 directory.  Please note that
+the examples in this book have not been tested against the NT version.
+</P>
+
+<P>
+The JDBC component of PostgreSQL is written completely in Java, and
+hence can run anywhere, as long as there is a machine on the local
+network where the server can be run.
+</P>
+
+<p>
+If, for whatever reason, you choose not to use PostgreSQL, you are
+encouraged to use any other database with a JDBS driver, but note that
+many of the examples will need minor changes.  In particular, change
+any lines containing <CODE>Class.forName("postgresql.Driver");</CODE>
+to a version appropriate for your database.</P>
+
+<P>Assuming you do choose to use PostgreSQL, a few things must be set
+up in advance.  Compile and install the database according to the
+instructions. Then run the <CODE>initDB</CODE> command as the database
+administrator.  Next, replace the contents of the data/pg_hba.conf
+file with the following lines:</P>
+
+<PRE>
+local        all                                         trust
+host         all         127.0.0.1     255.255.255.255   password
+</PRE>
+
+<P>Next, start up the server, which is done with this command:</P>
+
+<PRE>
+bin/postmaster -i &gt;&amp; log &amp;
+</PRE>
+
+<P>Now create a user called dbuser with the command:</P>
+
+<PRE>
+createuser dbuser
+</PRE>
+
+<P>Give this user a random id, and disallow creating databases and
+users.  Next, give this user a password with this command:</P>
+
+<PRE>
+psql -c "alter user dbuser with password dbuser;" template1
+</PRE>
+
+<P>Next, create a database which we will use throughout
+our examples:</P>
+
+<PRE>
+createdb jspbook
+</PRE>
+
+<P>Finally, load some data into the database with the following
+command:</P>
+
+<PRE>
+psql -u -f jspbook.sql jspbook
+</PRE>
+
+<P>
+This will prompt you for a username and password, reply "dbuser" to
+both.  This will then create all the tables needed to run all the
+examples from the book, and populate them with data,
+</P>
+
+<P>Finally, in order to allow Tomcat to use PostgreSQL, copy
+postgresql.jar, which should have been included in your PostreSQL
+distribution, to a directory in your CLASSPATH.
+
+</BODY>
+</HTML>

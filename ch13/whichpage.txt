@@ -1,0 +1,20 @@
+<HTML>
+
+<BODY>
+
+<P>Which page would you like?</P>
+
+<FORM ACTION="dispatch">
+
+<INPUT TYPE="radio" NAME="which" VALUE="red" CHECKED>red<BR>
+<INPUT TYPE="radio" NAME="which" VALUE="green">green<BR>
+<INPUT TYPE="radio" NAME="which" VALUE="blue">blue<BR>
+
+What is your favorite number?
+<INPUT TYPE="TEXT" NAME="favorite"><BR>
+
+<INPUT TYPE="SUBMIT" NAME="Go" VALUE="Go">
+</FORM>
+
+</BODY>
+</HTML>

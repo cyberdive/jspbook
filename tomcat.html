@@ -1,0 +1,65 @@
+<html>
+<head><title>Setting up Tomcat</title></head>
+
+<body bgcolor="#ffffff">
+
+<h1>Setting up Tomcat</h1>
+
+<p>
+First, you will need a Java Development Kit or Java Runtime
+Environment.  For Solaris and NT, these can be downloaded from <a
+href="http://java.sun.com/jdk/">Sun</a>.  JDKs for most versions of
+Linux are available from <a
+href="http://www.blackdown.org/java-linux.html">Blackdown</a>
+</p>
+
+<p>
+Before installing Tomcat, please read the <a href="LICENSE.txt">license</a>.
+</p>
+
+<p>
+The easiest way to get up and running is to copy the directory tomcat,
+and all its subdirectories, from the CD to a directory on your hard
+drive.
+</p>
+
+<p>
+Some of the files in this directory have been modified to support the
+examples from this book.  If you would like the 'raw' version of
+Tomcat, pick a directory in which to install, and unzip tomcat.zip.
+This will create a tomcat subdirectory containing all the Tomcat code
+and scripts.  Under Unix, make all the scripts runnable with the
+following command:
+</p>
+
+<pre>
+chmod a+x *.sh
+</pre>
+
+<p>
+To install the examples from this book manually, you can next cd into
+the Tomcat directory and unzip jspbook.zip.
+</p>
+
+<p>
+You are now ready to go!  Under Windows run startup.bat, under
+Solaris, Linux, or other Unix run startup.sh.  If you can access <a
+href="http://localhost:8080/">this link</a> everything is working
+properly.  If not, please see the README and FAQ files in the tomcat
+directory.
+</p>
+
+<h2>Running Tomcat with Apache</h2>
+
+<p>
+All the files needed to run Tomcat with Apache under Linux, Solaris
+and Windows are included on this CD.  This is not necessary in order
+to run the examples from the book, but combining Apache and Tomcat
+makes for a very powerful platform on which to run JSPs for a real
+site.  Start with the instructions <a href="howto.txt">here</a>, all
+binaries are under the apache directory.  As always, check the <a
+href="http://jakarta.apache.org">Jakarta home page</a> for updates.
+</p>
+
+</body>
+</html>

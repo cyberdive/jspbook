@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN"
+    "http://java.sun.com/j2ee/dtds/web-app_2.2.dtd">
+
+<web-app>
+    <servlet>
+        <servlet-name>
+            snoop
+        </servlet-name>
+        <servlet-class>
+            SnoopServlet
+        </servlet-class>
+<!--
+        <init-param>
+            <param-name>
+                foo
+            </param-name>
+            <param-value>
+                bar
+            </param-value>
+        </init-param>
+-->
+    </servlet>
+
+    <servlet>
+        <servlet-name>
+          hello
+        </servlet-name>
+        <servlet-class>
+          com.awl.jspbook.ch13.servlets.HelloServlet
+        </servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>
+          cookie
+        </servlet-name>
+        <servlet-class>
+          com.awl.jspbook.ch13.servlets.CookieServlet
+        </servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>
+          response
+        </servlet-name>
+        <servlet-class>
+          com.awl.jspbook.ch13.servlets.ResponseServlet
+        </servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>
+          dispatch
+        </servlet-name>
+        <servlet-class>
+          com.awl.jspbook.ch13.servlets.DispatchServlet
+        </servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>
+          counter1
+        </servlet-name>
+        <servlet-class>
+          com.awl.jspbook.ch13.servlets.Counter1
+        </servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>
+          counter2
+        </servlet-name>
+        <servlet-class>
+          com.awl.jspbook.ch13.servlets.Counter2
+        </servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>
+          cdinfo
+        </servlet-name>
+        <servlet-class>
+          com.awl.jspbook.ch13.servlets.CDInfo
+        </servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>
+          sumavg
+        </servlet-name>
+        <servlet-class>
+          com.awl.jspbook.ch13.servlets.SumAvgServlet
+        </servlet-class>
+    </servlet>
+
+
+    <servlet>
+      <servlet-name>
+          servletToJsp
+      </servlet-name>
+      <servlet-class>
+          servletToJsp
+      </servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>
+            servletToJsp
+        </servlet-name>
+        <url-pattern>
+            /servletToJsp
+        </url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>
+          hello
+        </servlet-name>
+        <url-pattern>
+          /ch13/hello
+        </url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>
+          cookie
+        </servlet-name>
+        <url-pattern>
+          /ch13/cookie
+        </url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>
+          response
+        </servlet-name>
+        <url-pattern>
+          /ch13/response
+        </url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>
+          dispatch
+        </servlet-name>
+        <url-pattern>
+          /ch13/dispatch
+        </url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>
+          counter1
+        </servlet-name>
+        <url-pattern>
+          /ch13/counter1
+        </url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>
+          counter2
+        </servlet-name>
+        <url-pattern>
+          /ch13/counter2
+        </url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>
+          cdinfo
+        </servlet-name>
+        <url-pattern>
+          /ch13/cdinfo
+        </url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>
+          sumavg
+        </servlet-name>
+        <url-pattern>
+          /ch13/sumavg
+        </url-pattern>
+    </servlet-mapping>
+
+    <taglib>
+        <taglib-uri>
+	   http://java.apache.org/tomcat/examples-taglib
+        </taglib-uri>
+        <taglib-location>
+           /WEB-INF/jsp/track-taglib.tld
+        </taglib-location>
+    </taglib>
+</web-app>

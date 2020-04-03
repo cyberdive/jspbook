@@ -1,0 +1,14 @@
+TABLE CREATE cd (albumid  int,artist   text, name  text);
+CREATE TABLE track (albumid  int, name     text, length   int);
+
+
+INSERT INTO cd VALUES(1,'Sunshine Blind','Liquid');
+INSERT INTO cd VALUES(2,'Sunshine Blind','Love the Sky to Death');
+
+INSERT INTO track VALUES(1,'Chimera',202);
+INSERT INTO track VALUES(1,'Neon',267);
+INSERT INTO track VALUES(1,'Release',295);
+
+INSERT INTO track VALUES(2,'Is there',248);
+INSERT INTO track VALUES(2,'Keyeslough,',227);
+INSERT INTO track VALUES(2,'Crescent and the star',226);

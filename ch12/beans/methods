@@ -1,0 +1,63 @@
+String style: the user's selected style 
+(navleft, navright, or navtext)
+
+String color: the user's selected color scheme
+(blues, reds, greens or greys)
+
+String bgColor: Color for the page background
+
+String textColor: Color for the text
+
+String linkColor: Color for links
+
+String vlinkColor: Color for visted links
+
+String headBgColor: Background color for the
+header
+
+String vavBgColor:
+background color for the navigation
+
+HttpServletRequest request:
+Write-only property, used to get a default
+name for the user if they have not logged in.
+
+String name: The user's name
+String password: The user's password
+
+boolean wantsQuiz:
+true if the user wants the daily quiz
+
+boolean loggedIn:
+True if the user is logged in.  If this
+is true, it implies name and password are valid.
+
+int authors[]: The authorIds that the user
+does NOT want.
+
+String sections[]: The sectionIds that the
+user does NOT want.
+
+boolean nameInUse():
+returns true if the current name exists
+in the user database.
+
+boolean wantsSection(int section):  Returns true
+if the user wants the indicated section.
+
+boolean wantsAuthor(int authorId): Returns
+true if the user wants stories by the indicated
+authorId
+
+boolean wantsArticle(int sectionId,int authorId):
+Returns true if the user wants an article from the
+given section written by the given author.
+
+void insert(): Inserts the current user into
+the database
+
+void select(): Retrieves information from the
+database that matches the current name and pasword
+
+void update():
+Updates all attributes of the user.

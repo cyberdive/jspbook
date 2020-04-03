@@ -1,0 +1,61 @@
+<html>
+<head><title>Advanced techniques</title></head>
+
+<body bgcolor="#ffffff">
+<h1>Advanced techniques</h1>
+
+<p>
+This chapter surveyed some advanced JSP techniques.  Although many of
+these are unlikely to be used on a day-to-day basis, there are
+certainly times when they may come in handy.
+</p>
+
+<ul>
+<li>A JSP that shows a list of <a href="primes1.jsp">prime numbers</a>,
+    using a declared method. (<a href="primes1.txt">source</a>).
+
+<li>Another JSP that shows a list of <a href="primes2.jsp">prime numbers</a>,
+    this time pre-populating a list using JspInit. 
+    (<a href="primes2.txt">source</a>).
+
+<li>Yet another <a href="primes3.jsp">list of primes</a>, built by extending
+    the base JSP class.
+    (<a href="primes3.txt">JSP source</a> --
+     <a href="beans/Primes.java">base class source</a>)
+
+<li>A JSP that builds an <a href="recordxml.jsp">XML page</a> containing
+    information about a CD.  This may cause your borower to pop-up a
+    window asking you to save the file.
+    (<a href="recordxml.txt">source</a>).
+
+<li>Another <a href="recordxml2.jsp">version</a> of the XML JSP, this time
+    the JSP is itself a well-formed XML document.  This does not completely
+    work yet, since the XML versions of some JSP tags are not yet implemented
+    in Tomcat.
+
+    (<a href="recordxml2.txt">source</a>).
+
+<li>A JSP that builds an image of an <a href="ankhform.jsp">anhk</a>
+
+<ol>
+<li><a href="beans/AnkhBean.java">The bean</a>
+<li><a href="ankh.txt">The JSP</a>
+<li><a href="ankhform.txt">The entry form</a>
+</ol>
+
+
+<li>One more version of the <a href="tracks.jsp">CD info page</a>,
+    this time using a custom tag. (postgresql)
+
+<ol>
+<li><a href="tracks.txt">The JSP</a>
+<li><a href="beans/TrackTag.java">The TrackTag class</a>
+<li><a href="beans/TrackTagExtraInfo.java">The TrackTagExtraInfo class</a>
+</ol>
+
+</ol>
+
+</body>
+</html>
+
+

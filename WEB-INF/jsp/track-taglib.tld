@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE taglib
+        PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+	"http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+
+<taglib>
+  <tlibversion>1.0</tlibversion>
+  <jspversion>1.1</jspversion>
+  <urn></urn>
+  <info>
+	A tag that reads tracks from a database
+  </info>
+
+  <tag>
+    <name>tracks</name>
+    <tagclass>com.awl.jspbook.ch14.TrackTag</tagclass>
+    <teiclass>com.awl.jspbook.ch14.TrackTagExtraInfo</teiclass>
+    <bodycontent>JSP</bodycontent>
+    <info>
+	Provided with the CD name, returns track info
+    </info>
+
+    <attribute>
+      <name>CD</name>
+      <required>true</required>
+    </attribute>
+  </tag>
+</taglib>

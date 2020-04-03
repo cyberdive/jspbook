@@ -1,0 +1,40 @@
+<html>
+<head><title>Servlets</title></head>
+
+<body bgcolor="#ffffff">
+<h1>Servlets</h1>
+
+<p>
+This chapter introduced servlets.  JSPs are turned into servlets by
+the JSP engine, so understanding servlets can help a developer to
+better understand JSPs.
+</p>
+
+<ul>
+<li>A simple <a href="hello">Hello World</a> servlet.
+    (<a href="beans/servlets/HelloServlet.java">source</a>)
+<li>A servlet that shows the <a href="cookie">cookies</a> that a user has.
+    (<a href="beans/servlets/CookieServlet.java">source</a>)
+<li>A servlet that uses the <a href="response">response object</a> to set 
+    a cookie.  Try setting a few, and then going back to the previous
+    servlet to show them.
+    (<a href="beans/servlets/ResponseServlet.java">source</a>)
+<li>A servlet that uses the <a href="whichpage.html">request dispatcher</a> 
+    to send the user to a different page
+    (<a href="beans/servlets/DispatchServlet.java">source</a>)
+<li>A global <a href="counter1">counter</a>.
+    (<a href="beans/servlets/Counter1.java">source</a>)
+<li>A <a href="counter2">session-scoped counter</a>
+    (<a href="beans/servlets/Counter2.java">source</a>)
+<li>A servlet that uses a <a href="cdinfo">serialized bean</a>
+    (<a href="beans/servlets/CDInfo.java">source</a>)
+<li>A more <a href="sumavgform.jsp">complex</a> example that gets input in
+    a <a href="sumavgform.txt">JSP</a>, send them to a 
+    <a href="beans/servlets/SumAvgServlet.java">servlet</a>, 
+    which puts data in a 
+    <a href="beans/SumAvgBean.java">bean</a>, which is
+      then used by <a href="sumavgresults.txt">another JSP</a>.
+</ul>
+
+</body>
+</html>
